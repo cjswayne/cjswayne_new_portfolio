@@ -21,6 +21,14 @@ $green:#CCFFCB;
   -moz-osx-font-smoothing: grayscale;
 }
 
+main{
+  flex:1;
+}
+
+header{
+  background-color: $darkBlue;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -60,6 +68,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+p{
+  color:black;
 }
 
 @media (prefers-color-scheme: light) {
