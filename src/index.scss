@@ -74,12 +74,28 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-nav > * {
+form{
+  margin:auto;
+  > *:not(button){
+    margin-bottom:10px;
+    outline:none;
+    background:$green;
+    padding: 5px 10px;
+    border:1px solid $darkBlue;
+  }
+}
+
+nav > a {
   color:white;
   margin-right:10px;
+  min-width:75px;
   &:hover{
     color:black;
   }
+}
+
+.logoName{
+  width:fit-content;
 }
 
 
@@ -93,5 +109,11 @@ nav > * {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media(max-width:480px){
+  header{
+    flex-wrap: wrap;
   }
 }

@@ -1,7 +1,10 @@
 function Footer(){
     return (
         <footer>
-            <p>dis be the footer</p>
+            <nav className="tc w-100">
+                <a href="">Github</a>
+                <a href="">LinkedIn</a>
+            </nav>
         </footer>
     )
 }
